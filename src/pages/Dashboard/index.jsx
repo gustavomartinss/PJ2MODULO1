@@ -128,7 +128,7 @@ export function Dashboard() {
         <S.Divider>
           <S.ProfileHeader to={"/profile"}>
             <S.UserPhoto
-              src={user.photoUrl === '' ? "../../../public/defaultUser.png" : user.photoUrl}
+              src={user.photoUrl === '' ? "https://github.com/gustavomartinss/ConnectLab-DevInHouse/blob/main/public/defaultUser.png?raw=true" : user.photoUrl}
             />
             <S.UserInfo>
               <S.UserName>Olá, {user.fullName.split(" ")[0]}!</S.UserName>
