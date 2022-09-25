@@ -11,8 +11,7 @@ export function Profile() {
       {hasUser && (
         <S.Card>
           <S.ProfileHeader>
-            <S.UserPhoto src={user.photoUrl ||
-                "../../../public/defaultUser.png"} />
+            <S.UserPhoto src={user.photoUrl === '' ? "https://i.imgur.com/7OVW0Pa.png" : user.photoUrl} />
             <S.UserInfo>
               <S.UserName>
                 {user.fullName || <Skeleton height={20} width={`100%`} />}
