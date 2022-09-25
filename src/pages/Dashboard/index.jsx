@@ -128,7 +128,7 @@ export function Dashboard() {
         <S.Divider>
           <S.ProfileHeader to={"/profile"}>
             <S.UserPhoto
-              src={user.photoUrl || "../../../public/defaultUser.png"}
+              src={user.photoUrl === '' ? "../../../public/defaultUser.png" : user.photoUrl}
             />
             <S.UserInfo>
               <S.UserName>Olá, {user.fullName.split(" ")[0]}!</S.UserName>
