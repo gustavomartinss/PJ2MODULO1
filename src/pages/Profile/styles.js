@@ -120,3 +120,13 @@ export const Link = styled(ReactRouterLink)`
     transition: 300ms;
   }
 `;
+
+export const QuitButton = styled.button`
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  :hover {
+    text-decoration: underline;
+  }
+`;

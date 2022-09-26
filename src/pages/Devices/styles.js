@@ -21,7 +21,7 @@ export const Card = styled.div`
 
 export const CardSkeleton = styled(Skeleton)`
   width: 80%;
-  max-width: 350px;
+  max-width: 300px;
   height: 400px;
   border-radius: 1rem;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
@@ -66,7 +66,7 @@ export const AddDeviceButton = styled.button`
 
 export const DevicesList = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 4rem;

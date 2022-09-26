@@ -34,7 +34,7 @@ export function Login() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (isAuthenticated) return navigate('/dashboard');// eslint-disable-next-line react-hooks/exhaustive-deps
+    if (isAuthenticated) return navigate('/dashboard');
   }, []);
 
   async function handleSignIn({ email, password }) {

@@ -92,7 +92,6 @@ export function EditProfile() {
       setValue("number", user.userAddress.number);
       setValue("neighborhood", user.userAddress.neighborhood);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   async function handleUpdateUser(values) {

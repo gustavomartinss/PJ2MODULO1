@@ -85,7 +85,7 @@ export function Dashboard() {
         });
     }
     user && getWeather();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, [user]);
 
   function handleFilterByLocals(local) {
@@ -118,7 +118,7 @@ export function Dashboard() {
   useEffect(() => {
     if (myFilteredDevices.length !== 0) {
       setIsLoading(!isLoading);
-    } // eslint-disable-next-line react-hooks/exhaustive-deps
+    } 
   }, [myFilteredDevices.length]);
 
   return (
